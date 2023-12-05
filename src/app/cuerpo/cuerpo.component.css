@@ -1,0 +1,13 @@
+.contenedor {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 100px;
+    width: 500px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  .contenedor form {
+    display: grid;
+    place-items: center;
+  }/*# sourceMappingURL=cuerpo.component.css.map */
