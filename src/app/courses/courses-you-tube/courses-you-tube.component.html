@@ -1,0 +1,9 @@
+<div *ngFor="let video of videos" class="carousel-item">
+  <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId" target="_blank">
+  </a>
+</div>
+<div class="spinner-container" *ngIf="mostrarSpinner">
+  <div class="spinner">
+    <img src="../../../assets/spinner.gif" alt="Cargando...">
+  </div>
+</div>

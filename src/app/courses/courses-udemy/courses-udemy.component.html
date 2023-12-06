@@ -1,0 +1,18 @@
+<div class="curso-container">
+    <a *ngFor="let curso of cursos" [href]="curso.url" class="curso-card">
+      <img [src]="curso.image_480x270" alt="Curso Image" class="curso-image">
+      <div class="curso-details">
+        <h2 class="curso-title">{{ curso.title }}</h2>
+        <p class="curso-language">{{ curso.locale.title }}</p>
+        <p class="curso-price">{{ curso.price_detail.price_string }}</p>
+        <p class="curso-headline">{{ curso.headline }}</p>
+      </div>
+    </a>
+  </div>
+  
+  
+<div class="spinner-container" *ngIf="mostrarSpinner">
+    <div class="spinner">
+        <img src="../../../assets/spinner.gif" alt="Cargando...">
+    </div>
+</div>
