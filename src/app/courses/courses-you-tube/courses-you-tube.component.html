@@ -1,6 +1,12 @@
-<div *ngFor="let video of videos" class="carousel-item">
-  <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId" target="_blank">
-  </a>
+<div class="youtube-container">
+  <div *ngFor="let video of videos" class="youtube-card">
+    <a [href]="'https://www.youtube.com/watch?v=' + video.id" target="_blank" class="youtube-link">
+      <img [src]="video.thumbnail" alt="Thumbnail" class="youtube-image">
+      <div class="youtube-details">
+        <h3 class="youtube-title">{{ video.title }}</h3>
+      </div>
+    </a>
+  </div>
 </div>
 <div class="spinner-container" *ngIf="mostrarSpinner">
   <div class="spinner">

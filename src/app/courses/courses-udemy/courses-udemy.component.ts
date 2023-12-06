@@ -33,10 +33,10 @@ export class CoursesUdemyComponent {
       'Authorization': 'Basic ekhUZWc4ajVNYWpkRzNIQ3RlZ0ExYUZDREd2dUpVcjFZQ3ZDVERNbTpGOVFpQ1BocFhBNnc1TGxDM2lsc3VaeUlqRFlTR0I0NHU5RWNtNEU0YVIyY2dUelJNQkphVzBBNGk2amRGdVE3TDdONEY5S1BMVExBZlJ4S25JOEVqTDhqQzBXOEVEYlNPMGx6TnF4Q0YydVc3cTBNUDZ2dkF3NjkxOTB6QzUxdg=='
     });
 
-    const wordSearch = this.searchService.getWord();
+    const word = this.searchService.getWord();
 
     const data: any = await this.httpClient
-      .get(`https://www.udemy.com/api-2.0/courses/?search=${wordSearch}`, { headers })
+      .get(`https://www.udemy.com/api-2.0/courses/?search=${word}`, { headers })
       .toPromise();
 
     this.cursos = data.results || [];
