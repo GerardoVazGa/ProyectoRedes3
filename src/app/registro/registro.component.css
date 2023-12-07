@@ -186,3 +186,14 @@
     animation: shake 0.5s;
   }
   
+  .btnInicio{
+    padding: 20px;
+  }
+
+  .btnInicio button{
+    background-color: #1F3A5F;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #ffffff;
+
+  }
