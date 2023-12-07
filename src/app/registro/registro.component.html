@@ -10,7 +10,7 @@
       </div>
     <div class="login-box">
         <h2>Registro</h2>
-        <form (submit)="verificarUsuario()">
+        <form >
             <div class="user-box" [ngClass]="{'shake': loginFailed}">
                 <input type="text" name="nombre" required [(ngModel)]="username">
                 <label>Nombre</label>
@@ -37,7 +37,7 @@
                         routerLink="/login" routerLinkActive="active">Iniciar sesion</a>
                 </small>
             </div>
-            <a class="inicio" (click)="verificarUsuario()">
+            <a class="inicio" (click)="enviarDatos()">
                 <span></span>
                 <span></span>
                 <span></span>
