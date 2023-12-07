@@ -1,4 +1,7 @@
 <div class="search-container">
-    <input type="text" id="searchInput" placeholder={{wordExample}} [(ngModel)]="word" (keyup.enter)="search()">
-    <button (click)="search()">Buscar</button>
+    <a routerLink="/login" routerLinkActive="active"><i class="fa-regular fa-user"></i></a>
+    <div>
+        <input type="text" id="searchInput" placeholder={{wordExample}} [(ngModel)]="word" (keyup.enter)="search()">
+        <button (click)="search()">Buscar</button>
+    </div>
 </div>

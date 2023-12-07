@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './courses.component.css'
 })
 export class CoursesComponent {
+  udemyVisible: boolean = false;
+  youtubeVisible: boolean = false;
 
+  mostrarSection(opcion: string) {
+    if (opcion === 'udemy') {
+      this.udemyVisible = true;
+      this.youtubeVisible = false;
+    } else if (opcion === 'youtube') {
+      this.udemyVisible = false;
+      this.youtubeVisible = true;
+    }
+  }
 }

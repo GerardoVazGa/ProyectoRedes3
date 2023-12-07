@@ -1,0 +1,96 @@
+h3{
+    size: 50px;
+    text-align: center;
+    margin-left: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: black;
+}
+
+.titulo{
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 15px;
+    width: 500px;
+    background-color: azure;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloY{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 15px;
+    width: 500px;
+    background-color: black;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.you{
+    color: white;
+    margin-right: 10px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(95, 79, 214, 0.6);
+}
+
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: beige;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+.courses-udemy{
+    padding: 20px;
+}
+
+.courses-you-tube{
+    padding: 20px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+    padding: 40px;
+}
+
+.btnUde{
+    margin-right: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 8px;
+    border-radius: 20px;
+    border-color: blanchedalmond;
+    background-color: rgba(95, 79, 214, 0.6);
+    color: beige;
+}
+
+.btnYou{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 20px;
+    border-color: blanchedalmond;
+    background-color: rgba(216, 30, 24);
+    color: beige;
+    display: flex;
+    justify-content: center;
+}

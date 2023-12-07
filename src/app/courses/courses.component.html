@@ -1,13 +1,35 @@
 <section class="search">
     <app-search></app-search>
 </section>
-<!--
-<h3>YouTube</h3>
-<section class="courses-you-tube">
-    <app-courses-you-tube></app-courses-you-tube>
-</section>
--->
-<h3>Udemy</h3>
-<div class="courses-udemy">
-    <app-courses-udemy></app-courses-udemy>
+
+<div class="botones">
+    <button (click)="mostrarSection('udemy')" class="btnUde"><img src="../../assets/udemy_logo_icon_168372.png" width="30px"></button>
+    <button (click)="mostrarSection('youtube')" class="btnYou"><i class="fa-brands fa-youtube" style="color: #fff;"></i></button>
 </div>
+
+<section class="tutube" [style.display]="youtubeVisible ? 'block' : 'none'">
+    <div class="contenedor1">
+        <div class="tituloY">
+            <h3 class="you">Youtube</h3>
+            <i class="fa-brands fa-youtube" style="color: #ff0a0a;"></i>
+        </div>
+    </div>
+    <section class="courses-you-tube">
+        <app-courses-you-tube></app-courses-you-tube>
+    </section>
+</section>
+
+
+<section class="ude" [style.display]="udemyVisible ? 'block' : 'none'">
+    <div class="contenedor">
+        <div class="titulo">
+            <h3>Udemy</h3>
+            <img src="../../assets/udemy_logo_icon_168372.png" alt="" width="30px">
+        </div>
+    </div>
+    <div class="courses-udemy">
+        <app-courses-udemy></app-courses-udemy>
+    </div>
+    
+</section>
+
