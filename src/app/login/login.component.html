@@ -10,7 +10,10 @@
           <input type="password" name="password" required [(ngModel)]="password">
           <label>Contraseña</label>
         </div>
-        <a (click)="verificarUsuario()">
+        <div class="user-box">
+          <small style="display: flex; justify-content: center;"><p style="color: white; margin-right: 10px;">¿No tienes cuenta?  </p><a class="registro" routerLink="/registro" routerLinkActive="active">registrar ahora</a></small>
+        </div>
+        <a class="inicio" (click)="verificarUsuario()">
           <span></span>
           <span></span>
           <span></span>

@@ -10,6 +10,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { CoursesYouTubeComponent } from './courses/courses-you-tube/courses-you-tube.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CoursesUdemyComponent } from './courses/courses-udemy/courses-udemy.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CoursesUdemyComponent } from './courses/courses-udemy/courses-udemy.com
     CoursesComponent,
     CoursesYouTubeComponent,
     CoursesUdemyComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
