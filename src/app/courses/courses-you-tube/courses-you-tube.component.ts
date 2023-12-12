@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SearchServiceService } from '../../services/search-service.service';
 import { Subscription } from 'rxjs';
-const apiKey = 'AIzaSyBI3Ucv-fz9__crgH7bkcSFMKTKcZ-W4sA';
-const apiKey2 = 'AIzaSyA0IrzQtA0tWlRO3bhaDKwijEs6iRyhr24';
+const apiKey = '';
+const apiKey2 = '';
 @Component({
   selector: 'app-courses-you-tube',
   templateUrl: './courses-you-tube.component.html',

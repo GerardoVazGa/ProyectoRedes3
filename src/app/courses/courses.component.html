@@ -3,9 +3,12 @@
 </section>
 
 <div class="botones">
-    <button (click)="mostrarSection('udemy')" class="btnUde"><img src="../../assets/udemy_logo_icon_168372.png" width="30px"></button>
-    <button (click)="mostrarSection('youtube')" class="btnYou"><i class="fa-brands fa-youtube" style="color: #fff;"></i></button>
+    <button (click)="mostrarSection('udemy')" class="btnUde"><img src="../../assets/udemy_logo_icon_168372.png"
+            width="30px"></button>
+    <button (click)="mostrarSection('youtube')" class="btnYou"><i class="fa-brands fa-youtube"
+            style="color: #fff;"></i></button>
 </div>
+
 
 <section class="tutube" [style.display]="youtubeVisible ? 'block' : 'none'">
     <div class="contenedor1">
@@ -14,9 +17,11 @@
             <i class="fa-brands fa-youtube" style="color: #ff0a0a;"></i>
         </div>
     </div>
+    <!--
     <section class="courses-you-tube">
         <app-courses-you-tube></app-courses-you-tube>
     </section>
+-->
 </section>
 
 
@@ -30,6 +35,5 @@
     <div class="courses-udemy">
         <app-courses-udemy></app-courses-udemy>
     </div>
-    
-</section>
 
+</section>
